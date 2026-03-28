@@ -10,7 +10,8 @@ int main() {
     cout << "2. Subtraction (-)" << endl;
     cout << "3. Multiplication (*)" << endl;
     cout << "4. Division (/)" << endl;
-    cout << "Choose operation (1-4): ";
+    cout << "5. Square (num1^2)" << endl;
+Choose operation (1-5):
     cin >> choice;
 
     cout << "Enter first number: ";
@@ -34,6 +35,9 @@ int main() {
             else
                 cout << "Error: Division by zero!" << endl;
             break;
+        case 5:
+    cout << "Result = " << num1 * num1 << endl;
+    break;
         default:
             cout << "Invalid choice!" << endl;
     }
